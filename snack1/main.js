@@ -2,14 +2,14 @@
 // Ogni oggetto automobile avrà le seguenti proprietà: marca, modello e alimentazione (benzina, diesel, gpl, elettrico, metano).
 
 const cars = [
-    { brand: "Mclaren", model: "Senna", fueltype: "petrol"},
-    { brand: "Lexus", model: "LFA", fueltype: "Petrol"},
+    { brand: "Mclaren", model: "Senna", fueltype: "Benzina"},
+    { brand: "Lexus", model: "LFA", fueltype: "Benzina"},
     { brand: "Ford", model: "Focus", fueltype: "Diesel"},
     { brand: "Volvo", model: "XC90", fueltype: "Diesel"},
     { brand: "Dacia", model: "Sandero", fueltype: "Gpl"},
     { brand: "Fiat", model: "Panda", fueltype: "Gpl"},
-    { brand: "Porsche", model: "Taycan", fueltype: "Elettrico"},
-    { brand: "Audi", model: "e-tron GT", fueltype: "Elettrico"},
+    { brand: "Porsche", model: "Taycan", fueltype: "Elettrica"},
+    { brand: "Audi", model: "e-tron GT", fueltype: "Elettrica"},
     { brand: "Volkswagen", model: "eco up", fueltype: "Metano"},
     { brand: "Seat", model: "Ibiza", fueltype: "Metano"}
 ]
