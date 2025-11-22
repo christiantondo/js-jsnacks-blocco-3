@@ -16,4 +16,4 @@ const animals = [
 // Crea un nuovo array con la lista dei mammiferi. */
 
 const mammiferi = animals.filter(animal => animal.classe == "mammiferi");
-console.log(mammiferi)
+console.log("Mammiferi:", mammiferi)
