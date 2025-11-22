@@ -12,13 +12,15 @@ const people = [
 
 // Partendo da questo, crea quindi un nuovo array inserendo, per ogni persona, una frase (stringa) con il nome e cognome e l’indicazione se può guidare, in base all’età.
 
-// Nuovo array con all'interno
-// const namePlusSurname = people.map(person => person.name + " " + person.surname)
-
 const canTheyDrive = people.map(person => {
     const fullName = `${person.name} ${person.surname}`
+
+    let canDrive= "";
     if (person.age >= 18) {
-        console.log(fullName, "può guidare")
-    } else
-        console.log(fullName, "non può guidare")
+        canDrive = "può guidare";
+    } else {
+        canDrive = "non può guidare";
+    }
+    return `${fullName} ${canDrive}`;
 })
+console.log(canTheyDrive);
