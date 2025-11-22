@@ -16,6 +16,11 @@ const cars = [
 
 
 // Dividi le automobili in 3 array separati: nel primo array solo le auto a benzina, nel secondo solo le auto a diesel, nel terzo il resto delle auto.
- 
+const petrolCars = cars.filter(car => car.fueltype == "Benzina");
+const dieselCars = cars.filter(car => car.fueltype == "Diesel");
+const otherCars = cars.filter(car => car.fueltype != "Benzina" && car.fueltype != "Diesel");
 
 // Infine stampa separatamente i 3 array. */
+console.log("", petrolCars)
+console.log("", dieselCars)
+console.log("", otherCars)
