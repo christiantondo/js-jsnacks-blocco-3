@@ -15,8 +15,10 @@ const people = [
 // Nuovo array con all'interno
 // const namePlusSurname = people.map(person => person.name + " " + person.surname)
 
-function canTheyDrive() {
-    const namePlusSurname = people.map(person => `${person.name} ${person.surname}`)
-    const canTheyDrive = person.age >= 18
-}
-// Nuovo array con dentro ogni persona e una stringa con nome e cognome
+const canTheyDrive = people.map(person => {
+    const fullName = `${person.name} ${person.surname}`
+    if (person.age >= 18) {
+        console.log(fullName, "può guidare")
+    } else
+        console.log(fullName, "non può guidare")
+})
